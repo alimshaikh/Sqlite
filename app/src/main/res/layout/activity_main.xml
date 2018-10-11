@@ -1,0 +1,89 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d4e8edad"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:layout_marginTop="50dp"
+        android:hint="Enter Title"
+        android:textStyle="italic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#000"
+        android:id="@+id/title" />
+
+    <EditText
+        android:layout_marginTop="15dp"
+        android:hint="Entre Description"
+        android:textStyle="italic"
+        android:backgroundTint="#000"
+        android:layout_below="@id/title"
+        android:id="@+id/desc"
+        android:inputType="textMultiLine"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:lines="2"
+        android:minLines="1"
+        android:gravity="top|left"
+        android:maxLines="3"
+        android:scrollbars="vertical"
+    />
+
+    <EditText
+        android:layout_marginTop="15dp"
+        android:backgroundTint="#000"
+        android:textStyle="italic"
+        android:layout_below="@id/desc"
+        android:inputType="number"
+        android:id="@+id/id"
+        android:hint="Enter Unique Id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <Button
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Data"
+        android:background="@drawable/rounded_button"
+        android:id="@+id/button_add"
+        android:layout_below="@id/id"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="90dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View All"
+        android:background="@drawable/rounded_button"
+        android:id="@+id/button_viewAll"
+        android:layout_above="@+id/button_update"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update"
+        android:background="@drawable/rounded_button"
+        android:id="@+id/button_update"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/button_add"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete"
+        android:background="@drawable/rounded_button"
+        android:id="@+id/button_delete"
+        android:layout_marginTop="5dp"
+        android:layout_centerVertical="true"
+        android:layout_below="@+id/button_viewAll"
+        android:layout_alignLeft="@+id/button_viewAll"
+        android:layout_alignStart="@+id/button_viewAll" />
+</RelativeLayout>
